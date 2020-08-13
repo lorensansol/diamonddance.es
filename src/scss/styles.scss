@@ -1,0 +1,18 @@
+$fa-font-path: '/fonts' !default;
+$fa-font-display: swap !default;
+$theme-colors: (
+  primary: #e2007a,
+  secondary: #f07fbc,
+  light: #f3f3f3,
+  dark: #151515,
+  info: #ccc,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545,
+);
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'main.scss';
+@import 'custom.scss';
+@import 'scroll-show.scss';
+@import 'lazy-load.scss';
+@import 'lightbox.scss';

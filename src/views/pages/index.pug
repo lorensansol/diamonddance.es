@@ -1,0 +1,14 @@
+extends ../template/layout.pug
+
+block var
+  - const title= '🥇 Diamond Dance: Zapatos de Bailes Latinos, Salsa Bachata', metaDescription = 'Venta de Zapatos, Zapatillas y Tacones para Bailes Latinos de Salsa y Bachata para Mujer ✅ Compra el mejor Calzado ✅ a la mejor calidad y precio.', index = true
+
+block content
+  header#seo.container.text-center
+    .row
+      .col-md-12(data-showup)
+        h1.page-header Zapatos de Bailes Latinos, Salsa y Bachata para Mujer
+        p Venta de Zapatos, Zapatillas y Tacones de Bailes Latinos para Mujer, Salsa y Bachata, Salón, Tango, etc. Compra el mejor Calzado a la mejor calidad / precio.
+  include ../includes/carrusel.pug
+  include ../includes/modelos.pug
+  include ../includes/contacto.pug

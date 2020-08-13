@@ -1,0 +1,31 @@
+extends ../template/layout.pug
+
+block var
+  - const title= '🥇 Accesorios para Zapatos de Bailes Latinos, Salsa Bachata', metaDescription = 'Accesorios para Zapatos, Zapatillas y Tacones de Bailes Latinos de Salsa y Bachata para Mujer ✅ Compra el mejor Calzado ✅ a la mejor calidad y precio.'
+
+block content
+  section.container.text-center
+    .row
+      .col-sm-12.project-name.overflow
+        h1.bold.page-header Accesorios y Complementos
+    .row(style='margin-top:50px;')
+      .col-sm-6(data-showup)
+        a(href='/img/accesorios/protectores-tacones-baile.jpg' data-lightbox='example-set')
+          img.img-fluid.img-marco(width='1024' height='713' alt='Protectores Tacones Baile' data-src='/img/accesorios/protectores-tacones-baile.jpg')
+        p Protectores para Tacones de Baile: 3,50 €
+      .col-sm-6(data-showup)
+        a(href='/img/accesorios/protector-tacones-baile.jpg' data-lightbox='example-set')
+          img.img-fluid.img-marco(width='1024' height='694' alt='Protector Tacones Baile' data-src='/img/accesorios/protector-tacones-baile.jpg')
+    .row(style='margin-top:25px;')
+      .col-sm-4(data-showup)
+        a(href='/img/accesorios/cepillo-zapatos-baile.jpg' data-lightbox='example-set')
+          img.img-fluid.img-marco(width='768' height='1024' alt='Cepillo Zapatos Baile' data-src='/img/accesorios/cepillo-zapatos-baile.jpg')
+        p Cepillos: 7,50 €
+      .col-sm-4(data-showup)
+        a(href='/img/accesorios/pinkys-baile.jpg' data-lightbox='example-set')
+          img.img-fluid.img-marco(width='733' height='1024' alt='Pinkys Zapatos Baile' data-src='/img/accesorios/pinkys-baile.jpg')
+        p Pinkys: 2,50 €
+      .col-sm-4(data-showup)
+        a(href='/img/accesorios/medias-baile.jpg' data-lightbox='example-set')
+          img.img-fluid.img-marco(width='768' height='1024' alt='Medias Baile' data-src='/img/accesorios/medias-baile.jpg')
+        p Medias: 25 €

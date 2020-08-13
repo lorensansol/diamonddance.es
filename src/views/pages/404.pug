@@ -1,0 +1,18 @@
+extends ../template/layout.pug
+
+block var
+  - const title= 'Error 404: Página no encontrada 😅 【 Diamond Dance ® 】'
+
+block content
+  section.py-5
+    .container
+      .row
+        .col-12.text-center(data-showup)
+          h1.h2 ¡Página no encontrada! 😅
+          h2.h3.text-primary (Error 404)
+          p La página a la que intentas acceder no está disponible (o almenos de momento).
+          p Puede ser porque hayas escrito la URL incorrectamente o porque hayas accedido mediante un enlace antiguo que haya sido eliminado.
+          p
+            | En cualquier caso, te sugerimos que vayas a la 
+            a.font-weight-bold(href="/") página de inicio
+            |  para navegar por nuestros contenidos 😄
