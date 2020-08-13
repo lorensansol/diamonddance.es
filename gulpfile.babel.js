@@ -82,7 +82,7 @@ gulp.task('html', () => {
       })
     )
     .pipe(pug({ pretty: devMode }))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs'))
 })
 
 gulp.task('pug', () => {
@@ -94,7 +94,7 @@ gulp.task('css', () => {
     return gulp
       .src('src/scss/styles.scss')
       .pipe(sass())
-      .pipe(gulp.dest('dist/css'))
+      .pipe(gulp.dest('docs/css'))
       .pipe(stream())
   } else {
     return gulp
@@ -102,19 +102,19 @@ gulp.task('css', () => {
       .pipe(sass())
       .pipe(
         purgecss({
-          content: ['dist/**/*.html', 'dist/js/*.js'],
+          content: ['docs/**/*.html', 'docs/js/*.js'],
           variables: true,
         })
       )
       .pipe(postcss([comments({ removeAll: true }), cssnano(), autoprefixer()]))
-      .pipe(gulp.dest('dist/css'))
+      .pipe(gulp.dest('docs/css'))
       .pipe(stream())
   }
 })
 
 const filesJs = [
   'src/js/lib/jquery.js',
-  'node_modules/bootstrap/dist/js/bootstrap.min.js',
+  'node_modules/bootstrap/docs/js/bootstrap.min.js',
   'src/js/lib/lightbox.min.js',
   'src/js/scroll-behavior-smooth.js',
   'src/js/scroll-shot.js',
@@ -129,7 +129,7 @@ gulp.task('js', () => {
       .src(filesJs)
       .pipe(concat('scripts.js'))
       .pipe(gulp.src('src/js/smooth-scroll.min.js'))
-      .pipe(gulp.dest('dist/js'))
+      .pipe(gulp.dest('docs/js'))
   } else {
     return gulp
       .src(filesJs)
@@ -137,7 +137,7 @@ gulp.task('js', () => {
       .pipe(concat('scripts.js'))
       .pipe(gulp.src('src/js/smooth-scroll.min.js'))
       .pipe(terser())
-      .pipe(gulp.dest('dist/js'))
+      .pipe(gulp.dest('docs/js'))
   }
 })
 
@@ -154,25 +154,25 @@ gulp.task('img', () => {
         }),
       ])
     )
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('docs/img'))
 })
 
 gulp.task('gfonts', () => {
   return gulp
     .src('fonts.list')
     .pipe(googleWebFonts({ fontDisplayType: 'swap' }))
-    .pipe(gulp.dest('dist/gfonts'))
+    .pipe(gulp.dest('docs/gfonts'))
 })
 
 gulp.task('rest', () => {
-  return gulp.src(['src/*.*', 'src/.*']).pipe(gulp.dest('dist'))
+  return gulp.src(['src/*.*', 'src/.*']).pipe(gulp.dest('docs'))
 })
 
 gulp.task('all', gulp.series('html', 'css', 'js', 'img', 'rest'))
 
 gulp.task('default', () => {
   server({
-    server: 'dist',
+    server: 'docs',
   })
   gulp.watch('src/views/**/*.pug', gulp.series('html', reload))
   gulp.watch('src/js/**/*.js', gulp.series('js', reload))
