@@ -1,1 +1,10 @@
-theme: jekyll-theme-cayman
+# Redirect settings
+collections:
+  redirects:
+    output: true
+
+defaults:
+  - scope:
+      type: redirects
+    values:
+      layout: redirect

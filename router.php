@@ -3,7 +3,7 @@
 // Archivo por el que pasa la extensión 'PHP Server' de 'VS Code'
 
 $uri = $_SERVER['REQUEST_URI'];
-$ruta = 'dist'.$uri;
+$ruta = 'docs'.$uri;
 if (preg_match('/\./', $uri)){
   return false;
 } elseif ($uri == '/') {
