@@ -11,14 +11,14 @@ section#portfolio-information
       .col-sm-6
         .row.principal(data-showup)
           a.col-12(href=`/img/zapatos/${id}.jpg` data-lightbox='example-set')
-            img.img-fluid(data-src=`/img/zapatos/${id}.jpg` alt=`zapatos-${id}`)
+            img.img-fluid(data-src=`/img/zapatos/${id}.jpg` alt=`zapatos-${id}` width='1024' height='1024')
         .row(data-showup)
           a.col-4(href=`/img/zapatos/${id}-lateral.jpg` data-lightbox='example-set')
-            img.img-fluid(data-src=`/img/zapatos/${id}-lateral.jpg` alt=`zapatos-${id}-lateral`)
+            img.img-fluid(data-src=`/img/zapatos/${id}-lateral.jpg` alt=`zapatos-${id}-lateral` width='1024' height='1024')
           a.col-4(href=`/img/zapatos/${id}-alzado.jpg` data-lightbox='example-set')
-            img.img-fluid(data-src=`/img/zapatos/${id}-alzado.jpg` alt=`zapatos-${id}-alzado`)
+            img.img-fluid(data-src=`/img/zapatos/${id}-alzado.jpg` alt=`zapatos-${id}-alzado` width='1024' height='1024')
           a.col-4(href=`/img/zapatos/${id}-posterior.jpg` data-lightbox='example-set')
-            img.img-fluid(data-src=`/img/zapatos/${id}-posterior.jpg` alt=`zapatos-${id}-posterior`)
+            img.img-fluid(data-src=`/img/zapatos/${id}-posterior.jpg` alt=`zapatos-${id}-posterior` width='1024' height='1024')
       .col-sm-6
         .project-info.mt-3(data-showup)
           h2 Descripción
@@ -49,7 +49,7 @@ section#portfolio.padding-top.padding-bottom
       each producto, slugProducto in productos
         if producto.modelo == pr.modelo
           a.col-6.col-sm-4.col-md-3(href=`/zapatos/${slugProducto}` data-showup)
-            img.img-fluid(data-src=`/img/zapatos/${slugProducto}-lateral.jpg` alt=`zapatos-${slugProducto}-lateral`)
+            img.img-fluid(data-src=`/img/zapatos/${slugProducto}-lateral.jpg` alt=`zapatos-${slugProducto}-lateral` width='1024' height='1024')
             h4.h5.font-weight-light
               | Modelo #{producto.modelo}
               br

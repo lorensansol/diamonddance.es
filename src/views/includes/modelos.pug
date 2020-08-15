@@ -7,7 +7,7 @@ section#portfolio.container
   .row.justify-content-center
     each producto, slugProducto in productos
       a.col-6.col-sm-4.col-md-3(href=`/zapatos/${slugProducto}` data-showup)
-        img.img-fluid(data-src=`/img/zapatos/${slugProducto}-lateral.jpg` alt=`zapatos-${slugProducto}-lateral`)
+        img.img-fluid(data-src=`/img/zapatos/${slugProducto}-lateral.jpg` alt=`zapatos-${slugProducto}-lateral` width='1024' height='1024')
         h4.h5.font-weight-light
           | Modelo #{producto.modelo}
           br
