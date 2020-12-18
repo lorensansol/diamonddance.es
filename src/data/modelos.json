@@ -1,0 +1,46 @@
+{
+  "productos": {
+    "modelo-420-decoracion-elegance-marron-claro": { "modelo": "420", "decoracion": "Elegance", "color": "Marrón Claro", "precio": "99" },
+    "modelo-420-sin-decorar-cobre": { "modelo": "420", "decoracion": "Sin Decorar", "color": "Cobre", "precio": "75" },
+    "modelo-420-sin-decorar-negro": { "modelo": "420", "decoracion": "Sin Decorar", "color": "Negro", "precio": "75" },
+    "modelo-520-decoracion-estelar-negro": { "modelo": "520", "decoracion": "Estelar", "color": "Negro", "precio": "92" },
+    "modelo-520-sin-decorar-marron-claro": { "modelo": "520", "decoracion": "Sin Decorar", "color": "Marrón Claro", "precio": "69" },
+    "modelo-520-sin-decorar-negro": { "modelo": "520", "decoracion": "Sin Decorar", "color": "Negro", "precio": "69" },
+    "modelo-620-decoracion-mandala-negro": { "modelo": "620", "decoracion": "Mandala", "color": "Negro", "precio": "112" },
+    "modelo-620-decoracion-panamera-cobre": { "modelo": "620", "decoracion": "Panamera", "color": "Cobre", "precio": "112" },
+    "modelo-620-pala-decorada-cobre": { "modelo": "620", "decoracion": "Pala", "color": "Cobre", "precio": "99" },
+    "modelo-620-pala-decorada-negro": { "modelo": "620", "decoracion": "Pala", "color": "Negro", "precio": "99" },
+    "modelo-620-sin-decorar-cobre": { "modelo": "620", "decoracion": "Sin Decorar", "color": "Cobre", "precio": "82" },
+    "modelo-620-sin-decorar-negro": { "modelo": "620", "decoracion": "Sin Decorar", "color": "Negro", "precio": "82" },
+    "modelo-720-pala-decorada-negro": { "modelo": "720", "decoracion": "Pala", "color": "Negro", "precio": "99" },
+    "modelo-720-sin-decorar-negro": { "modelo": "720", "decoracion": "Sin Decorar", "color": "Negro", "precio": "79" },
+    "modelo-720-sin-decorar-plata": { "modelo": "720", "decoracion": "Sin Decorar", "color": "Plata", "precio": "79" },
+    "modelo-820-decoracion-deluxe-azul": { "modelo": "820", "decoracion": "Deluxe", "color": "Azul", "precio": "112" },
+    "modelo-820-decoracion-deluxe-rojo": { "modelo": "820", "decoracion": "Deluxe", "color": "Rojo", "precio": "112" },
+    "modelo-820-decoracion-deluxe-rosa-palo": { "modelo": "820", "decoracion": "Deluxe", "color": "Rosa Palo", "precio": "125" },
+    "modelo-820-pala-decorada-cobre": { "modelo": "820", "decoracion": "Pala", "color": "Cobre", "precio": "99" },
+    "modelo-820-sin-decorar-azul": { "modelo": "820", "decoracion": "Sin Decorar", "color": "Azul", "precio": "82" },
+    "modelo-820-sin-decorar-cobre": { "modelo": "820", "decoracion": "Sin Decorar", "color": "Cobre", "precio": "82" },
+    "modelo-820-sin-decorar-negro": { "modelo": "820", "decoracion": "Sin Decorar", "color": "Negro", "precio": "82" },
+    "modelo-820-sin-decorar-rojo": { "modelo": "820", "decoracion": "Sin Decorar", "color": "Rojo", "precio": "82" },
+    "modelo-820-sin-decorar-rosa-palo": { "modelo": "820", "decoracion": "Sin Decorar", "color": "Rosa Palo", "precio": "89" },
+    "modelo-jazz-marron-claro": { "modelo": "Jazz", "decoracion": "Sin Decorar", "color": "Marrón Claro", "precio": "35" }
+  },
+  "decoraciones": {
+    "420_Elegance": "<p>Decoración con piedras (en este caso color gris y aurora boreal) de la mas alta calidad para un brillo espectacular.</p><p>Parte de alante con decoración en dos de las tiras del zapato.</p><p>Talón con tres filas rectas de piedras que aporta un toque de elegancia y sencillez.</p>",
+    "620_Mandala": "<p>Decoración con piedras de la mas alta calidad para un brillo espectacular.</p><p>Diseño exclusivo con un dibujo en el talón formando círculos concéntricos en dos tonos de piedras (gris y aurora boreal).</p><p>Pala decorada con piedras en su totalidad.</p>",
+    "620_Panamera": "<p>Decoración con piedras aurora boreal de la mas alta calidad para un brillo espectacular.</p><p>Diseño exclusivo con 7 líneas curvadas de piedras en el talón que van desde la parte de arriba hasta la tapa del tacón. Y pala decorada en su totalidad.</p>",
+    "720_Pala": "<p>Decoración con piedras de distintos tamaños de la mas alta calidad para un brillo espectacular.</p><p>La pala va forrada de piedras de varios tamaños dándole un toque vistoso y sofisticado.</p>",
+    "820_Deluxe": "<p>Decoración con piedras aurora boreal de la mas alta calidad para un brillo espectacular.</p><p>Bonito dibujo en el talon y parte de alante con piedras que recorren todas las tiras hasta la parte superior del zapato.</p>",
+    "420_Normal": "<p>Normal.</p>",
+    "520_Estelar": "<p>Estelar.</p>"
+  },
+  "descripciones": {
+    "420": { "descripcion": "Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...", "diseno": "Pala de 4 tiras cruzadas especialmente colocadas para un total agarre del pie. Talón troquelado en ambos lados. Correa cruzada en el empeine y hebilla de cristales de fácil agarre para no tener que desabrocharla. Planta de gel para un mayor confort y super flexible.", "materiales": "Zapato forrado en raso y suela de serraje.", "tacon": "7,5cm  *otras medidas bajo pedido", "color": "Disponible en cobre, negro y marrón claro. *todos los demás colores bajo pedido." },
+    "520": { "descripcion": "Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...", "diseno": "Básico de 5 tiras cruzadas perfectas para un total agarre del pie. Correa cruzada en el empeine y hebilla de cristales de fácil agarre para no tener que desabrocharla. Planta de gel para un mayor confort y super flexible.", "materiales": "Zapato forrado en raso y suela de serraje.", "tacon": "7,5cm  *otras medidas bajo pedido", "color": "Disponible en cobre, negro y marrón claro. *todos los demás colores bajo pedido." },
+    "720": { "descripcion": "Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...", "diseno": "Pala cerrada muy cómoda al llevar tul entre las tiras. Elegante y confortable diseño de Goldance.", "materiales": "Zapato forrado en raso y suela de serraje.", "tacon": "7,5cm  *otras medidas bajo pedido", "color": "Disponible en negro y plata. * todos los demás colores bajo pedido." },
+    "820": { "descripcion": "Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...", "diseno": "Bonito modelo con 4 tiras que se juntan en el medio para formar una trenza sobre la parte superior del pie. Sujección al tobillo con hebilla de cristales de fácil agarre para no tener que desabrocharla. Planta de gel para un mayor confort y super flexible.", "materiales": "Zapato forrado en raso y suela de serraje.", "tacon": "7,5cm  *otras medidas bajo pedido", "color": "Disponible en rojo, rosa palo, azul, negro, cobre y marrón claro." },
+    "620": { "descripcion": "Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...", "diseno": "Precioso modelo de 4 tiras curvadas cosidas en la parte central superior. Diseño muy cómodo ya que se adapta muy bien al pie. Correa cruzada en el empeine y hebilla de cristales de fácil agarre para no tener que desabrocharla. Planta de gel para un mayor confort y super flexible.", "materiales": "Zapato forrado en raso y suela de serraje.", "tacon": "7,5cm  *otras medidas bajo pedido", "color": "Disponible en cobre, negro y marrón claro. *todos los demás colores bajo pedido." },
+    "Jazz": { "descripcion": "Zapatillas de Jazz unisex con suela partida de serraje especial para bailes de salón y latinos.", "diseno": "Zapatillas de Jazz.", "materiales": "Zapatilla forrada en tela con suela partida de serraje.", "tacon": "Sin Tacón", "color": "Disponible en marrón claro y negro." }
+  }
+}

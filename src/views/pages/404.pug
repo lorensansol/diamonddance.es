@@ -16,3 +16,70 @@ block content
             | En cualquier caso, te sugerimos que vayas a la 
             a.font-weight-bold(href="/") página de inicio
             |  para navegar por nuestros contenidos 😄
+  script.
+    // redirects
+    const redirects = {
+      // inicio
+      '/modelo-420-decorado-cobre': '/',
+      '/modelo-420-decorado-negro': '/',
+      '/index': '/',
+      '/m/': '/',
+      '/mobile/': '/',
+      // accesorios
+      '/accesorios': '/#accesorios',
+      // productos
+      '/modelo-420-decoracion-elegance-marron-claro': '#zapatos-modelo-420-decoracion-elegance-marron-claro',
+      '/modelo-420-sin-decorar-cobre': '#zapatos-modelo-420-sin-decorar-cobre',
+      '/modelo-420-sin-decorar-negro': '#zapatos-modelo-420-sin-decorar-negro',
+      '/modelo-520-decoracion-estelar-negro': '#zapatos-modelo-520-decoracion-estelar-negro',
+      '/modelo-520-sin-decorar-marron-claro': '#zapatos-modelo-520-sin-decorar-marron-claro',
+      '/modelo-520-sin-decorar-negro': '#zapatos-modelo-520-sin-decorar-negro',
+      '/modelo-620-decoracion-mandala-negro': '#zapatos-modelo-620-decoracion-mandala-negro',
+      '/modelo-620-decoracion-panamera-cobre': '#zapatos-modelo-620-decoracion-panamera-cobre',
+      '/modelo-620-pala-decorada-cobre': '#zapatos-modelo-620-pala-decorada-cobre',
+      '/modelo-620-pala-decorada-negro': '#zapatos-modelo-620-pala-decorada-negro',
+      '/modelo-620-sin-decorar-cobre': '#zapatos-modelo-620-sin-decorar-cobre',
+      '/modelo-620-sin-decorar-negro': '#zapatos-modelo-620-sin-decorar-negro',
+      '/modelo-720-pala-decorada-negro': '#zapatos-modelo-720-pala-decorada-negro',
+      '/modelo-720-sin-decorar-negro': '#zapatos-modelo-720-sin-decorar-negro',
+      '/modelo-720-sin-decorar-plata': '#zapatos-modelo-720-sin-decorar-plata',
+      '/modelo-820-decoracion-deluxe-azul': '#zapatos-modelo-820-decoracion-deluxe-azul',
+      '/modelo-820-decoracion-deluxe-rojo': '#zapatos-modelo-820-decoracion-deluxe-rojo',
+      '/modelo-820-decoracion-deluxe-rosa-palo': '#zapatos-modelo-820-decoracion-deluxe-rosa-palo',
+      '/modelo-820-pala-decorada-cobre': '#zapatos-modelo-820-pala-decorada-cobre',
+      '/modelo-820-sin-decorar-azul': '#zapatos-modelo-820-sin-decorar-azul',
+      '/modelo-820-sin-decorar-cobre': '#zapatos-modelo-820-sin-decorar-cobre',
+      '/modelo-820-sin-decorar-negro': '#zapatos-modelo-820-sin-decorar-negro',
+      '/modelo-820-sin-decorar-rojo': '#zapatos-modelo-820-sin-decorar-rojo',
+      '/modelo-820-sin-decorar-rosa-palo': '#zapatos-modelo-820-sin-decorar-rosa-palo',
+      '/modelo-jazz-marron-claro': '#zapatos-modelo-jazz-marron-claro',
+      // productos 2
+      '/zapatos/modelo-420-decoracion-elegance-marron-claro': '/#zapatos-modelo-420-decoracion-elegance-marron-claro',
+      '/zapatos/modelo-420-sin-decorar-cobre': '/#zapatos-modelo-420-sin-decorar-cobre',
+      '/zapatos/modelo-420-sin-decorar-negro': '/#zapatos-modelo-420-sin-decorar-negro',
+      '/zapatos/modelo-520-decoracion-estelar-negro': '/#zapatos-modelo-520-decoracion-estelar-negro',
+      '/zapatos/modelo-520-sin-decorar-marron-claro': '/#zapatos-modelo-520-sin-decorar-marron-claro',
+      '/zapatos/modelo-520-sin-decorar-negro': '/#zapatos-modelo-520-sin-decorar-negro',
+      '/zapatos/modelo-620-decoracion-mandala-negro': '/#zapatos-modelo-620-decoracion-mandala-negro',
+      '/zapatos/modelo-620-decoracion-panamera-cobre': '/#zapatos-modelo-620-decoracion-panamera-cobre',
+      '/zapatos/modelo-620-pala-decorada-cobre': '/#zapatos-modelo-620-pala-decorada-cobre',
+      '/zapatos/modelo-620-pala-decorada-negro': '/#zapatos-modelo-620-pala-decorada-negro',
+      '/zapatos/modelo-620-sin-decorar-cobre': '/#zapatos-modelo-620-sin-decorar-cobre',
+      '/zapatos/modelo-620-sin-decorar-negro': '/#zapatos-modelo-620-sin-decorar-negro',
+      '/zapatos/modelo-720-pala-decorada-negro': '/#zapatos-modelo-720-pala-decorada-negro',
+      '/zapatos/modelo-720-sin-decorar-negro': '/#zapatos-modelo-720-sin-decorar-negro',
+      '/zapatos/modelo-720-sin-decorar-plata': '/#zapatos-modelo-720-sin-decorar-plata',
+      '/zapatos/modelo-820-decoracion-deluxe-azul': '/#zapatos-modelo-820-decoracion-deluxe-azul',
+      '/zapatos/modelo-820-decoracion-deluxe-rojo': '/#zapatos-modelo-820-decoracion-deluxe-rojo',
+      '/zapatos/modelo-820-decoracion-deluxe-rosa-palo': '/#zapatos-modelo-820-decoracion-deluxe-rosa-palo',
+      '/zapatos/modelo-820-pala-decorada-cobre': '/#zapatos-modelo-820-pala-decorada-cobre',
+      '/zapatos/modelo-820-sin-decorar-azul': '/#zapatos-modelo-820-sin-decorar-azul',
+      '/zapatos/modelo-820-sin-decorar-cobre': '/#zapatos-modelo-820-sin-decorar-cobre',
+      '/zapatos/modelo-820-sin-decorar-negro': '/#zapatos-modelo-820-sin-decorar-negro',
+      '/zapatos/modelo-820-sin-decorar-rojo': '/#zapatos-modelo-820-sin-decorar-rojo',
+      '/zapatos/modelo-820-sin-decorar-rosa-palo': '/#zapatos-modelo-820-sin-decorar-rosa-palo',
+      '/zapatos/modelo-jazz-marron-claro': '/#zapatos-modelo-jazz-marron-claro',
+    }
+    for (redirect in redirects) {
+      if (location.pathname == redirect) location.href = redirects[redirect]
+    }

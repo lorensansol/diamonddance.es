@@ -1,18 +1,22 @@
-$fa-font-path: '/fonts' !default;
-$fa-font-display: swap !default;
-$theme-colors: (
-  primary: #e2007a,
-  secondary: #f07fbc,
-  light: #f3f3f3,
-  dark: #151515,
-  info: #ccc,
-  success: #28a745,
-  warning: #ffc107,
-  danger: #dc3545,
-);
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'main.scss';
-@import 'custom.scss';
-@import 'scroll-show.scss';
-@import 'lazy-load.scss';
-@import 'lightbox.scss';
+// Font Awesome
+// $fa-font-path: '/fonts' !default;
+// $fa-font-display: swap !default;
+
+// Bootstrap
+$primary: #e2007a;
+$secondary: #f07fbc;
+// $enable-responsive-font-sizes: true;
+
+// Simple Ligthbox
+$sl-overlay-background: darken($primary, 30%);
+$sl-navigation-color: #fff;
+.sl-image > img { border-radius: 1rem; }
+.sl-wrapper { z-index: 1090 !important; }
+.sl-overlay { z-index: 1085 !important; }
+
+@import '../../node_modules/bootstrap-scss/bootstrap';
+@import '../../node_modules/simplelightbox/src/simple-lightbox';
+@import 'main';
+@import 'scroll-show';
+@import 'lazy-load';
+@import 'custom';

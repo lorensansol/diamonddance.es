@@ -28,7 +28,9 @@
     "gulp-terser": "^1.2.0"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0"
+    "bootstrap-scss": "^4.5.3",
+    "bootstrap.native": "^3.0.14",
+    "simplelightbox": "^2.7.0"
   },
   "description": ""
 }

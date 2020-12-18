@@ -17,16 +17,16 @@ body > footer {
 }
 #header .navbar-toggler,
 #header .navbar-toggler:focus {
-  border-color: #e2007a;
+  border-color: $primary;
   margin-top: 15px;
   margin-right: 5px;
   outline: none;
 }
 .navbar-header .navbar-toggler .icon-bar {
-  background-color: #e2007a;
+  background-color: $primary;
 }
 #header .navbar-toggler:hover {
-  background: #e2007a;
+  background: $primary;
 }
 #header .navbar-toggler:hover .icon-bar {
   background: #fff;
@@ -80,33 +80,16 @@ body > footer {
 .carousel-control.right {
   background-image: none;
 }
-#portfolio {
-  margin-top: 30px;
-  text-align: center;
+a.product-link:hover,
+a[data-lightbox]:hover {
+  box-shadow: 0px 0px 0px 1px $primary;
+  border-radius: .25rem;
 }
-#portfolio a {
-  display: inline-block;
-  float: none;
-  text-align: center;
-  border-radius: 5px;
-  margin: 0 -2px 1px;
-}
-#portfolio a:hover,
-#portfolio-information a:hover {
-  box-shadow: 0px 0px 0px 1px #e2007a;
-  border-radius: 5px;
-}
-.principal {
-  margin-bottom: 10px;
-}
-#portfolio a h4 {
-  color: #404040;
-}
-#portfolio p {
-  color: #e2007a;
+a[data-lightbox]:hover  > img {
+  border-radius: .25rem;
 }
 .btn {
-  /* Botones largos con saltos de lÃ­nea en pantallas pequeñas */
+  /* Botones largos con saltos de línea en pantallas pequeñas */
   white-space: normal;
 }
 #action,
@@ -115,8 +98,8 @@ body > footer {
 .enca {
   /* cambiar fondo de encabezados de secciones */
   background: #fff;
-  border-top: 5px #e2007a solid;
-  color: #e2007a;
+  border-top: 5px $primary solid;
+  color: $primary;
   text-align: center;
 }
 .contacto,
@@ -131,7 +114,7 @@ body > footer {
   margin: 0 auto;
 }
 .project-info h2 {
-  color: #e2007a;
+  color: $primary;
 }
 .h2 {
   color: #686868;
@@ -139,12 +122,12 @@ body > footer {
 .llamar {
   font-size: 20px;
   background: #fff;
-  border: 1px solid #e2007a;
+  border: 1px solid $primary;
   margin: 5px;
   transition: all 0.5s;
 }
 .llamar:hover {
-  transform: scale(1.2);
+  // transform: scale(1.2);
   background: #fff;
 }
 .llamar:hover i {

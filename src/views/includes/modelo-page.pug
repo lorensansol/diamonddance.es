@@ -1,0 +1,57 @@
+- const pr = productos[id]
+header
+  .container
+    .row
+      .col-sm-6
+      .col-sm-6.project-name(data-showup)
+        h1.h2.font-weight-light.bold.page-header= `Modelo ${pr.modelo} ${pr.decoracion} ${pr.color}`
+section#portfolio-information
+  .container
+    .row
+      .col-sm-6
+        .row.principal(data-showup)
+          a.col-12(href=`/img/zapatos/${id}.jpg` data-lightbox)
+            img.img-fluid(data-src=`/img/zapatos/${id}.jpg` alt=`zapatos-${id}` width='1024' height='1024')
+        .row(data-showup)
+          a.col-4(href=`/img/zapatos/${id}-lateral.jpg` data-lightbox)
+            img.img-fluid(data-src=`/img/zapatos/${id}-lateral.jpg` alt=`zapatos-${id}-lateral` width='1024' height='1024')
+          a.col-4(href=`/img/zapatos/${id}-alzado.jpg` data-lightbox)
+            img.img-fluid(data-src=`/img/zapatos/${id}-alzado.jpg` alt=`zapatos-${id}-alzado` width='1024' height='1024')
+          a.col-4(href=`/img/zapatos/${id}-posterior.jpg` data-lightbox)
+            img.img-fluid(data-src=`/img/zapatos/${id}-posterior.jpg` alt=`zapatos-${id}-posterior` width='1024' height='1024')
+      .col-sm-6
+        .project-info.mt-3(data-showup)
+          h2 Descripción
+          p= descripciones[pr.modelo].descripcion
+          h2 Diseño
+          p= descripciones[pr.modelo].diseno
+          h2 Materiales
+          p= descripciones[pr.modelo].materiales
+          h2 Tacón
+          p= descripciones[pr.modelo].tacon
+          h2 Color
+          p= descripciones[pr.modelo].color
+          if decoraciones[pr.modelo+'_'+pr.decoracion]
+            h2 Decoración
+            | !{decoraciones[pr.modelo+'_'+pr.decoracion]}
+          h2 Precio
+          p.h2= `${pr.precio} €`
+          p
+            | Comprobar 
+            a(href='/#tallas') tallas
+            |  antes de realizar pedido
+        .live-preview(data-showup)
+          a.btn.btn-common.uppercase(href='/#contacto') ¡Me los pido!
+section#portfolio.padding-top.padding-bottom
+  .container
+    .row.justify-content-center
+      h2.col-12.title.text-center.page-header(data-showup) Zapatos relacionados
+      each producto, slugProducto in productos
+        if producto.modelo == pr.modelo
+          a.col-6.col-sm-4.col-md-3(href=`/zapatos/${slugProducto}` data-showup)
+            img.img-fluid(data-src=`/img/zapatos/${slugProducto}-lateral.jpg` alt=`zapatos-${slugProducto}-lateral` width='1024' height='1024')
+            h4.h5.font-weight-light
+              | Modelo #{producto.modelo}
+              br
+              | #{`${producto.decoracion} ${producto.color}`}
+            p= `${producto.precio} €`

@@ -34,13 +34,13 @@ html {
 }
 
 a {
-  color: #e2007a;
+  color: $primary;
 }
 
 a:hover {
   outline: none;
   text-decoration: none;
-  color: #cb006e;
+  color: $primary;
 }
 
 a:focus {
@@ -93,7 +93,7 @@ h3 {
 .btn-common {
   font-size: 14px;
   color: #797979;
-  border: 1px solid #e2007a;
+  border: 1px solid $primary;
   font-family: 'Open Sans', Lato, sans-serif;
   font-weight: 300;
   padding: 10px 25px;
@@ -112,7 +112,7 @@ h3 {
   outline: none;
   background: none;
   box-shadow: none;
-  color: #e2007a;
+  color: $primary;
 }
 
 .align-right {
@@ -158,7 +158,7 @@ h3 {
 }
 
 .carousel-indicators.visible-xs li {
-  border-color: #e2007a;
+  border-color: $primary;
   border-width: 2px;
   height: 12px;
   margin: 0 5px 0 0;
@@ -191,7 +191,7 @@ h3 {
 }
 
 .search i {
-  color: #e2007a;
+  color: $primary;
   cursor: pointer;
   position: absolute;
   right: 10px;
@@ -213,7 +213,7 @@ h3 {
   color: #818285;
   font-weight: 300;
   outline: none;
-  border: 1px solid #e2007a;
+  border: 1px solid $primary;
   margin-top: 20px;
   border-radius: 4px;
 }
@@ -234,7 +234,7 @@ h3 {
 
 .social-icons ul li a:hover,
 .social-icons ul li a:focus {
-  color: #e2007a;
+  color: $primary;
   background: none;
 }
 
@@ -276,11 +276,11 @@ h3 {
 .navbar-inverse .navbar-nav > .open > a {
   background-color: inherit;
   border: 0;
-  color: #e2007a;
+  color: $primary;
 }
 
 #header .navbar-inverse .navbar-nav li a:hover {
-  color: #e2007a;
+  color: $primary;
 }
 
 /*Dropdown menu*/
@@ -302,7 +302,7 @@ ul.sub-menu {
 
 #header .navbar-nav li ul.sub-menu li .active {
   background: #fef7ee;
-  color: #e2007a;
+  color: $primary;
   position: relative;
 }
 
@@ -310,7 +310,7 @@ ul.sub-menu {
   position: absolute;
   font-size: 56px;
   top: -13px;
-  color: #cb006e;
+  color: $primary;
 }
 
 #header .navbar-nav li ul.sub-menu li .active .fa-angle-right {
@@ -324,7 +324,7 @@ ul.sub-menu {
 #header .navbar-nav li ul.sub-menu li a:hover,
 #header .navbar-nav li ul.sub-menu li a:focus {
   background: #fef7ee;
-  color: #e2007a;
+  color: $primary;
 }
 
 .fa-angle-down {
@@ -403,7 +403,7 @@ ul.sub-menu {
 }
 
 .bottom .media-body h3 a {
-  color: #e2007a;
+  color: $primary;
 }
 
 .testimonial .media {
@@ -433,7 +433,7 @@ ul.sub-menu {
   top: 8px;
   content: '"';
   font-size: 40px;
-  color: #e2007a;
+  color: $primary;
   font-family: 'Noto Sans', sans-serif;
   transform: rotate(180deg);
   -ms-transform: rotate(180deg); /* IE 9 */
@@ -447,7 +447,7 @@ ul.sub-menu {
   bottom: 14px;
   content: '"';
   font-size: 40px;
-  color: #e2007a;
+  color: $primary;
   font-family: 'Noto Sans', sans-serif;
   line-height: 0;
 }
@@ -458,7 +458,7 @@ ul.sub-menu {
 }
 
 .form-control {
-  border: 1px solid #e2007a;
+  border: 1px solid $primary;
   font-weight: 300;
   outline: none;
   box-shadow: none;
@@ -467,14 +467,14 @@ ul.sub-menu {
 
 .form-control:hover,
 .form-control:focus {
-  border-color: #e2007a;
+  border-color: $primary;
   outline: none;
   box-shadow: none;
 }
 
 .btn-submit {
   width: 100%;
-  background-color: #e2007a;
+  background-color: $primary;
   color: #fff;
   font-size: 14px;
   font-weight: 300;
@@ -482,7 +482,7 @@ ul.sub-menu {
   text-transform: uppercase;
   border-radius: 3px;
   margin-top: 5px;
-  border-bottom: 3px solid #e2007a;
+  border-bottom: 3px solid $primary;
   box-shadow: none;
   padding: 10px;
 }
@@ -638,7 +638,7 @@ ul.sub-menu {
   font-size: 48px;
   height: 48px;
   line-height: 48px;
-  color: #e2007a;
+  color: $primary;
   position: absolute;
   left: 50%;
   margin-left: -24px;
@@ -892,7 +892,7 @@ ul.sub-menu {
 
 .count h1 {
   font-size: 60px;
-  color: #cb006e;
+  color: $primary;
 }
 
 .count h3 {
@@ -936,7 +936,7 @@ h3.top-zero {
 }
 
 .progress-bar.progress-bar-primary {
-  background: #cb006e;
+  background: $primary;
 }
 
 /*************************
@@ -978,7 +978,7 @@ ul.elements li {
 }
 
 ul.elements li > i {
-  color: #e2007a;
+  color: $primary;
   display: inline-block;
   margin-right: 10px;
 }
@@ -1215,19 +1215,19 @@ Portfolio with right sidebar
 .categories .navbar-stacked li a:hover {
   background: none;
   margin-left: 20px;
-  color: #cb006e;
+  color: $primary;
   opacity: 1;
 }
 
 .categories .navbar-stacked li.active a {
-  color: #cb006e;
+  color: $primary;
   padding-left: 20px;
 }
 
 .categories .navbar-stacked li.active a:before {
   position: absolute;
   content: '';
-  border-color: transparent transparent transparent #cb006e;
+  border-color: transparent transparent transparent $primary;
   border-width: 8px;
   border-style: solid;
   left: 0;
@@ -1267,14 +1267,14 @@ Portfolio with right sidebar
 }
 
 .sidebar-item .media:hover {
-  border-left: 2px solid #cb006e;
+  border-left: 2px solid $primary;
   padding-left: 5px;
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
 
 .sidebar-item .media:hover.media .media-body h4 a {
-  color: #cb006e;
+  color: $primary;
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
 }
@@ -1314,7 +1314,7 @@ Portfolio with right sidebar
 }
 
 .tag-cloud .nav-pills li a:hover {
-  background: #cb006e;
+  background: $primary;
 }
 
 .popular ul.gallery {
@@ -1429,7 +1429,7 @@ Portfolio Details
 }
 
 .navbar-default li a:hover {
-  color: #cb006e;
+  color: $primary;
   background: none;
 }
 
@@ -1501,7 +1501,7 @@ Blog Default
   border-style: solid;
   border-width: 60px;
   content: '';
-  border-color: transparent transparent #cb006e transparent;
+  border-color: transparent transparent $primary transparent;
   z-index: -1;
   cursor: initial;
 }
@@ -1532,7 +1532,7 @@ Blog Default
   border-left-style: solid;
   border-left-width: 1px;
   height: 100%;
-  border-left-color: #cb006e;
+  border-left-color: $primary;
   left: 50%;
   margin-left: -2px;
 }
@@ -1592,7 +1592,7 @@ Blog Default
 
 .post-title a:hover,
 .comments-number a:hover {
-  color: #cb006e;
+  color: $primary;
 }
 
 .post-content .post-author {
@@ -1605,7 +1605,7 @@ Blog Default
 }
 
 a.read-more {
-  color: #e2007a;
+  color: $primary;
   font-weight: 300;
 }
 
@@ -1677,7 +1677,7 @@ Blog with right sidebar
 }
 
 .post-nav li a i {
-  color: #cb006e;
+  color: $primary;
   margin-right: 8px;
 }
 
@@ -1726,7 +1726,7 @@ Blog with right sidebar
 /* Audio CSS */
 
 .audiojs {
-  background: #cb006e;
+  background: $primary;
   height: 45px;
   width: 100%;
 }
@@ -1757,7 +1757,7 @@ Blog with right sidebar
 }
 
 .audiojs .progress {
-  background: #e2007a;
+  background: $primary;
 
   height: 8px;
   border-radius: 10px;
@@ -1807,7 +1807,7 @@ span.stButton_gradient,
 
 .author-profile .col-sm-2 img {
   width: 100%;
-  border-left: 3px solid #cb006e;
+  border-left: 3px solid $primary;
 }
 
 .author-profile h3 {
@@ -1821,7 +1821,7 @@ span.stButton_gradient,
 }
 
 .author-profile span a {
-  color: #e2007a;
+  color: $primary;
 }
 
 .response-area {
@@ -1844,7 +1844,7 @@ span.stButton_gradient,
 
 .post-comment .pull-left img {
   margin-right: 60px;
-  border-left: 3px solid #cb006e;
+  border-left: 3px solid $primary;
 }
 
 .post-comment .media-body {
@@ -1858,12 +1858,12 @@ span.stButton_gradient,
 }
 
 .post-comment .media-body span i {
-  color: #e2007a;
+  color: $primary;
   margin-right: 10px;
 }
 
 .post-comment .media-body span a {
-  color: #e2007a;
+  color: $primary;
   font-weight: 700;
 }
 
@@ -1916,7 +1916,7 @@ span.stButton_gradient,
 
 #map-section .contact-info h2,
 #map-section address a:hover {
-  color: #e2007a;
+  color: $primary;
 }
 
 #contact-form #message {
@@ -2056,7 +2056,7 @@ span.stButton_gradient,
 }
 
 .highligh-table .btn-buynow {
-  background-color: #e2007a;
+  background-color: $primary;
 }
 
 .highligh-table .btn-buynow:hover {
@@ -2418,7 +2418,7 @@ span.stButton_gradient,
 }
 
 #countdown li.angle-one:before {
-  border-color: #e2007a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-color: $primary rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   border-style: solid;
   border-width: 250px 145px 0;
   content: '';
@@ -2440,7 +2440,7 @@ span.stButton_gradient,
 }
 
 #countdown li.angle-two:before {
-  border-color: rgba(0, 0, 0, 0) #e2007a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0) $primary rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
   border-style: solid;
   border-width: 250px 290px 0 0;
   content: '';
@@ -2492,7 +2492,7 @@ span.stButton_gradient,
 }
 
 #subscribe .fa-envelope-o {
-  color: #cb006e;
+  color: $primary;
   margin-right: 5px;
 }
 
@@ -2508,7 +2508,7 @@ span.stButton_gradient,
 }
 
 #newsletter i {
-  color: #cb006e;
+  color: $primary;
   font-size: 36px;
   position: absolute;
   right: 12px;
@@ -2528,7 +2528,7 @@ span.stButton_gradient,
 }
 
 #coming-soon-footer a {
-  color: #e2007a;
+  color: $primary;
 }
 
 #coming-soon-footer a:hover {
@@ -2569,7 +2569,7 @@ span.stButton_gradient,
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: #cb006e;
+  background-color: $primary;
 }
 
 .tab-content {
@@ -2582,7 +2582,7 @@ span.stButton_gradient,
 }
 .icon-wrapper {
   display: inline-block;
-  background-color: #e2007a;
+  background-color: $primary;
   color: #fff;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1) inset;
   border-radius: 100%;
@@ -2659,15 +2659,15 @@ span.stButton_gradient,
     margin: 0 auto !important;
     top: 10px;
   }
-  #header .navbar-brand {
-    margin-bottom: 20px;
-  }
+  // #header .navbar-brand {
+  //   margin-bottom: 20px;
+  // }
 }
 #home-slider .slide-text {
   z-index: 1;
 }
 #home-slider i.fa {
-  color: #e2007a;
+  color: $primary;
 }
 #home-slider .slider-sun {
   font-size: 130px;
@@ -2773,12 +2773,12 @@ span.stButton_gradient,
   margin-bottom: 10px;
 }
 .img-marco {
-  border: 1px solid #e2007a;
+  border: 1px solid $primary;
   border-radius: 4px;
   padding: 4px;
 }
 .testimonial img {
-  border: 1px solid #e2007a;
+  border: 1px solid $primary;
   border-radius: 50%;
   padding: 4px;
 }
@@ -2794,7 +2794,7 @@ span.stButton_gradient,
   padding-left: 25px;
 }
 .testimonial cite {
-  color: #e2007a;
+  color: $primary;
 }
 .sociales i {
   border: 1px solid #cc9b59;
@@ -2823,7 +2823,7 @@ span.stButton_gradient,
 }
 .gmap {
   height: 285px;
-  border: 1px solid #e2007a;
+  border: 1px solid $primary;
   border-radius: 4px;
   padding: 4px;
 }
