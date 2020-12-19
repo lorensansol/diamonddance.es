@@ -13,5 +13,6 @@ combinaciones:
     img-lateral: /img/zapatos/modelo-jazz-marron-claro-lateral.jpg
     img-alzado: /img/zapatos/modelo-jazz-marron-claro-alzado.jpg
     img-posterior: /img/zapatos/modelo-jazz-marron-claro-posterior.jpg
+    published: true
 published: true
 ---
