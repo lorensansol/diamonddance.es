@@ -1,8 +1,16 @@
-Elegance: '<p>Decoración con piedras (en este caso color gris y aurora boreal) de la mas alta calidad para un brillo espectacular.</p><p>Parte de alante con decoración en dos de las tiras del zapato.</p><p>Talón con tres filas rectas de piedras que aporta un toque de elegancia y sencillez.</p>'
-Mandala: '<p>Decoración con piedras de la mas alta calidad para un brillo espectacular.</p><p>Diseño exclusivo con un dibujo en el talón formando círculos concéntricos en dos tonos de piedras (gris y aurora boreal).</p><p>Pala decorada con piedras en su totalidad.</p>'
-Panamera: '<p>Decoración con piedras aurora boreal de la mas alta calidad para un brillo espectacular.</p><p>Diseño exclusivo con 7 líneas curvadas de piedras en el talón que van desde la parte de arriba hasta la tapa del tacón. Y pala decorada en su totalidad.</p>'
-Pala: '<p>Decoración con piedras de distintos tamaños de la mas alta calidad para un brillo espectacular.</p><p>La pala va forrada de piedras de varios tamaños dándole un toque vistoso y sofisticado.</p>'
-Deluxe: '<p>Decoración con piedras aurora boreal de la mas alta calidad para un brillo espectacular.</p><p>Bonito dibujo en el talon y parte de alante con piedras que recorren todas las tiras hasta la parte superior del zapato.</p>'
-Normal: '<p>Normal.</p>'
-Estelar: '<p>Estelar.</p>'
-Sin Decorar: '<p>Sin Decorar.</p>'
+- nombre: Elegance
+  descripcion: '<p>Decoración con piedras (en este caso color gris y aurora boreal) de la mas alta calidad para un brillo espectacular.</p><p>Parte de alante con decoración en dos de las tiras del zapato.</p><p>Talón con tres filas rectas de piedras que aporta un toque de elegancia y sencillez.</p>'
+- nombre: Mandala
+  descripcion: '<p>Decoración con piedras de la mas alta calidad para un brillo espectacular.</p><p>Diseño exclusivo con un dibujo en el talón formando círculos concéntricos en dos tonos de piedras (gris y aurora boreal).</p><p>Pala decorada con piedras en su totalidad.</p>'
+- nombre: Panamera
+  descripcion: '<p>Decoración con piedras aurora boreal de la mas alta calidad para un brillo espectacular.</p><p>Diseño exclusivo con 7 líneas curvadas de piedras en el talón que van desde la parte de arriba hasta la tapa del tacón. Y pala decorada en su totalidad.</p>'
+- nombre: Pala
+  descripcion: '<p>Decoración con piedras de distintos tamaños de la mas alta calidad para un brillo espectacular.</p><p>La pala va forrada de piedras de varios tamaños dándole un toque vistoso y sofisticado.</p>'
+- nombre: Deluxe
+  descripcion: '<p>Decoración con piedras aurora boreal de la mas alta calidad para un brillo espectacular.</p><p>Bonito dibujo en el talon y parte de alante con piedras que recorren todas las tiras hasta la parte superior del zapato.</p>'
+- nombre: Normal
+  descripcion: '<p>Normal.</p>'
+- nombre: Estelar
+  descripcion: '<p>Estelar.</p>'
+- nombre: Sin Decorar
+  descripcion: '<p>Sin Decorar.</p>'

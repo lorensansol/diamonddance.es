@@ -1,4 +1,4 @@
-{% for modelo in site.data.modelos %}
+{% for modelo in site.modelos %}
   {% for combinacion in modelo.combinaciones %}
 
     <!-- Variable ID -->
@@ -46,7 +46,11 @@
                     <p>{{ modelo.colores }}</p>
                     {% if combinacion.decoracion != 'Sin Decorar' %}
                       <h2>Decoración</h2>
-                      {{ site.data.decoraciones[combinacion.decoracion] }}
+                      {% for decoracion in site.data.decoraciones %}
+                        {% if decoracion.nombre == combinacion.decoracion %}
+                          {{ decoracion.descripcion }}
+                        {% endif %}
+                      {% endfor %}
                     {% endif %}
                     <h2>Precio</h2>
                     <p class="h2">{{ combinacion.precio }} €</p>

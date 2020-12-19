@@ -1,7 +1,14 @@
-Azul: '#000'
-Cobre: '#000'
-Marrón Claro: '#000'
-Negro: '#000'
-Plata: '#000'
-Rojo: '#000'
-Rosa Palo: '#000'
+- nombre: Azul
+  codigo: '#0000ff'
+- nombre: Cobre
+  codigo: '#f59233'
+- nombre: Marrón Claro
+  codigo: '#eac78d'
+- nombre: Negro
+  codigo: '#000000'
+- nombre: Plata
+  codigo: '#cecece'
+- nombre: Rojo
+  codigo: '#ff0000'
+- nombre: Rosa Palo
+  codigo: '#f9d0eb'
