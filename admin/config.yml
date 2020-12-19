@@ -3,11 +3,11 @@ local_backend:
   allowed_hosts: ['127.0.0.1']
 backend:
   name: github
-  branch: main
+  branch: master
   repo: lorensansol/diamonddance.es
   site_domain: diamonddance.netlify.com
-media_folder: img
-public_folder: /img
+media_folder: img/zapatos
+public_folder: /img/zapatos
 site_url: /
 display_url: https://diamonddance.es
 logo_url: /img/logo.svg

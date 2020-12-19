@@ -4,3 +4,4 @@ Gemfile.lock
 package-lock.json
 _site
 .jekyll-cache
+*Icon_
