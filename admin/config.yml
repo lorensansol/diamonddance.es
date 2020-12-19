@@ -61,11 +61,11 @@ collections:
           # - label: Color
           #   name: color
           #   widget: relation
-          #   hint: 'Indica un color que previamente hayas creado en "Colores"'
-          #   collection: colores
-          #   file: _data/colores
-          #   value_field: nombre
-          #   search_fields: [nombre]
+          #   hint: 'Indica un color que previamente hayas creado en "Datos > Colores"'
+          #   # file: 'data/colores.yml'
+          #   collection: data
+          #   value_field: 'nombre'
+          #   search_fields: ['nombre']
           - label: Precio
             name: precio
             widget: number
@@ -115,7 +115,7 @@ collections:
   #       name: colores
   #       file: '_data/colores.yml'
   #       fields:
-  #         - label: Color
+  #         - label: Colores
   #           name: color
   #           widget: list
   #           fields:
@@ -124,7 +124,7 @@ collections:
   #               widget: string
   #             - label: Código
   #               name: codigo
-  #               widget: string
+  #               widget: color
   #               required: false
 slug:
   encoding: ascii
