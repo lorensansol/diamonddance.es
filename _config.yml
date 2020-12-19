@@ -3,6 +3,8 @@
 collections:
   modelos:
     output: true
+  decoraciones:
+    output: true
 
 # Compress HTML
 compress_html:

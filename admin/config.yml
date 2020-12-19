@@ -110,6 +110,26 @@ collections:
         name: published
         widget: boolean
         default: true
+  - label: Decoraciones
+    name: decoraciones
+    folder: _decoraciones
+    slug: '{{slug}}'
+    identifier_field: nombre
+    create: true
+    summary: 'Decoración: {{fields.nombre}}'
+    sortable_fields: ['nombre', 'commit_date']
+    fields:
+      - label: Nombre de Decoración
+        name: nombre
+        widget: string
+        slug:
+          widget: string
+          encoding: ascii
+          clean_accents: true
+          sanitize_replacement: '-'
+      - label: Descripción
+        name: body
+        widget: markdown
   - label: Datos
     name: datos
     files:
@@ -120,8 +140,8 @@ collections:
         - label: Decoración
           name: decoracion
           widget: list
-          summary: Decoraciónnnnn
-          allow_add: true
+          # summary: Decoraciónnnnn
+          # allow_add: true
           fields:
             - label: Nombre de Decoración
               name: nombre

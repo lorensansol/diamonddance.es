@@ -1,0 +1,4 @@
+---
+nombre: Estelar
+---
+Estelar.

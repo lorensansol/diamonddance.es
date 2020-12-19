@@ -46,9 +46,9 @@
                     <p>{{ modelo.colores }}</p>
                     {% if combinacion.decoracion != 'Sin Decorar' %}
                       <h2>Decoración</h2>
-                      {% for decoracion in site.data.decoraciones %}
+                      {% for decoracion in site.decoraciones %}
                         {% if decoracion.nombre == combinacion.decoracion %}
-                          {{ decoracion.descripcion | markdownify }}
+                          {{ decoracion.content | markdownify }}
                         {% endif %}
                       {% endfor %}
                     {% endif %}
