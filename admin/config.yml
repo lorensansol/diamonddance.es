@@ -120,6 +120,8 @@ collections:
         - label: Decoración
           name: decoracion
           widget: list
+          summary: Decoraciónnnnn
+          allow_add: true
           fields:
             - label: Nombre de Decoración
               name: nombre
