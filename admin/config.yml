@@ -56,10 +56,10 @@ collections:
             widget: relation
             hint: 'Indica una decoración que previamente hayas creado en "Decoraciones"'
             collection: decoraciones
-            # folder: _decoraciones
             value_field: 'nombre.*'
-            search_fields: ['nombre.*']
-            summary: 
+            search_fields: [nombre]
+            value_fields: [nombre]
+            multiple: false
           - label: Color
             name: color
             widget: relation
@@ -123,11 +123,6 @@ collections:
       - label: Nombre de Decoración
         name: nombre
         widget: string
-        slug:
-          widget: string
-          encoding: ascii
-          clean_accents: true
-          sanitize_replacement: '-'
       - label: Descripción
         name: body
         widget: markdown
@@ -148,3 +143,7 @@ collections:
             - label: Código
               name: codigo
               widget: color
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
