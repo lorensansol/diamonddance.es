@@ -1,3 +1,4 @@
+---
 - nombre: Azul
   codigo: '#0000ff'
 - nombre: Cobre
@@ -12,3 +13,4 @@
   codigo: '#ff0000'
 - nombre: Rosa Palo
   codigo: '#f9d0eb'
+---
