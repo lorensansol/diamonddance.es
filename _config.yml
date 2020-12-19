@@ -1,8 +1,8 @@
+
 # Collections
 collections:
   modelos:
     output: true
-
 
 # Compress HTML
 compress_html:
@@ -22,6 +22,9 @@ exclude:
   - gulpfile.babel.js
   - package.json
   - package-lock.json
+
+# Other
+markdown: kramdown
 
 # plugins:
 #   - jekyll-redirect-from

@@ -1,7 +1,8 @@
 ---
 nombre: 'Jazz'
 descripcion: 'Zapatillas de Jazz unisex con suela partida de serraje especial para bailes de salón y latinos.'
-diseno: 'Zapatillas de Jazz.'
+diseno: >-
+  Zapatillas de Jazz.
 materiales: 'Zapatilla forrada en tela con suela partida de serraje.'
 tacon: 'Sin Tacón'
 colores: 'Disponible en marrón claro y negro.'

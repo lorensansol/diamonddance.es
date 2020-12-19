@@ -126,7 +126,7 @@ collections:
               widget: string
             - label: Descripción
               name: descripcion
-              widget: text
+              widget: markdown
     - label: Colores
       name: colores
       file: _data/colores.yml

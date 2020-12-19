@@ -37,7 +37,7 @@
                     <h2>Descripción</h2>
                     <p>{{ modelo.descripcion }}</p>
                     <h2>Diseño</h2>
-                    <p>{{ modelo.diseno }}</p>
+                    {{ modelo.diseno | markdownify }}
                     <h2>Materiales</h2>
                     <p>{{ modelo.materiales }}</p>
                     <h2>Tacón</h2>
@@ -48,7 +48,7 @@
                       <h2>Decoración</h2>
                       {% for decoracion in site.data.decoraciones %}
                         {% if decoracion.nombre == combinacion.decoracion %}
-                          {{ decoracion.descripcion }}
+                          {{ decoracion.descripcion | markdownify }}
                         {% endif %}
                       {% endfor %}
                     {% endif %}
