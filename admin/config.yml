@@ -44,6 +44,7 @@ collections:
       - label: Combinaciones
         name: combinaciones
         widget: list
+        summary: '{{fields.decoracion}} - {{fields.color}}'
         min: 1
         fields:
           - label: Decoración
@@ -51,18 +52,20 @@ collections:
             widget: relation
             hint: 'Indica una decoración que previamente hayas creado en "Decoraciones"'
             collection: decoraciones
-            value_field: 'nombre.*'
+            value_field: nombre
             search_fields: [nombre]
-            value_fields: [nombre]
-            multiple: false
           - label: Color
             name: color
-            widget: relation
-            hint: 'Indica un color que previamente hayas creado en "Colores"'
-            collection: colores
-            file: _data/colores
-            value_field: 'nombre.*'
-            search_fields: ['nombre.*']
+            widget: string
+            hint: 'Indica un color'
+          # - label: Color
+          #   name: color
+          #   widget: relation
+          #   hint: 'Indica un color que previamente hayas creado en "Colores"'
+          #   collection: colores
+          #   file: _data/colores
+          #   value_field: nombre
+          #   search_fields: [nombre]
           - label: Precio
             name: precio
             widget: number
@@ -105,23 +108,24 @@ collections:
       - label: Descripción
         name: body
         widget: markdown
-  - label: Datos
-    name: datos
-    files:
-    - label: Colores
-      name: colores
-      file: _data/colores.yml
-      fields:
-        - label: Color
-          name: color
-          widget: list
-          fields:
-            - label: Nombre de Color
-              name: nombre
-              widget: string
-            - label: Código
-              name: codigo
-              widget: color
+  # - label: Datos
+  #   name: datos
+  #   files:
+  #     - label: Colores
+  #       name: colores
+  #       file: '_data/colores.yml'
+  #       fields:
+  #         - label: Color
+  #           name: color
+  #           widget: list
+  #           fields:
+  #             - label: Nombre de Color
+  #               name: nombre
+  #               widget: string
+  #             - label: Código
+  #               name: codigo
+  #               widget: string
+  #               required: false
 slug:
   encoding: ascii
   clean_accents: true
