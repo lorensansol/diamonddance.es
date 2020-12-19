@@ -1,0 +1,8 @@
+# DEVELOPMENT CONFIG
+
+livereload: true
+include:
+  - _assets/gfonts
+# sass:
+  # sass_dir: _assets/scss
+  # style: compressed

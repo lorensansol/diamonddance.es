@@ -1,0 +1,288 @@
+local_backend:
+  url: http://localhost:4000/
+  allowed_hosts: ['127.0.0.1']
+backend:
+  name: github
+  branch: main
+  repo: lorensansol/diamonddance.es
+  site_domain: diamonddance.netlify.com
+media_folder: img
+public_folder: /img
+site_url: /
+display_url: https://diamonddance.es
+logo_url: /img/logo.svg
+locale: es
+show_preview_links: false
+collections:
+  - name: modelos
+    identifier_field: "{{fields.nombre}}"
+    label: Modelos
+    folder: _data
+    file: modelos
+    create: false
+    slug: modelos
+    preview_path: "{{fields.slug}}"
+    summary: "{{date}} · {{title}}"
+    sortable_fields: ['nombre', 'last_modified_at', 'commit_date', ]
+    view_filters:
+      - label: Publicados
+        field: published
+        pattern: true
+      - label: No Publicados
+        field: published
+        pattern: false
+    view_groups:
+      - label: Año
+        field: date
+        pattern: \d{4}
+      - label: Mes
+        field: date
+        pattern: \d{4}-\d{2}
+      - label: Publicados
+        field: published
+    fields:
+      - nombre: Nombre de Modelo
+        name: nombre
+        widget: string
+      - label: Descripción
+        name: description
+        widget: text
+      - label: Diseño
+        name: diseno
+        widget: text
+      - label: Materiales
+        name: materiales
+        widget: text
+      - label: Tacón
+        name: tacon
+        widget: string
+      - label: Colores
+        name: colores
+        widget: string
+      - label: Combinaciones
+        name: combinaciones
+        widget: "list"
+        fields:
+          - label: decoracion
+            name: Decoración
+            widget: relation
+            hint: Indica una decoración que previamente hayas creado en 'Decoraciones'
+            collection: decoraciones
+            file: decoraciones
+            value_field: "*"
+            search_fields: ["*"]
+          - label: color
+            name: Color
+            widget: relation
+            hint: Indica un color que previamente hayas creado en 'Colores'
+            collection: colores
+            file: colores
+            value_field: "*"
+            search_fields: ["*"]
+          - label: precio
+            name: Precio
+            widget: number
+          - label: img
+            name: Imagen Principal
+            widget: image
+            hint: "Nombre de archivo en minúsculas, sin acentos ni eñes, cambiando espacios por guiens medios · Máximo 1024 pixeles de ancho y alto · Editor online: pixlr.com · Compresor online: kraken.io · Ejemplo: 'modelo-420-elegance-marron-claro.jpg'"
+            encoding: ascii
+            clean_accents: true
+            sanitize_replacement: "-"
+          - label: img-lateral
+            name: Imagen Lateral
+            widget: image
+            hint: "Nombre de archivo con mismo formato que Imagen Principal, pero añadiendo '-lateral' al final · Ejemplo: 'modelo-420-elegance-marron-claro-lateral.jpg'"
+            encoding: ascii
+            clean_accents: true
+            sanitize_replacement: "-"
+          - label: img-alzado
+            name: Imagen Alzado
+            widget: image
+            hint: "Nombre de archivo con mismo formato que Imagen Principal, pero añadiendo '-alzado' al final · Ejemplo: 'modelo-420-elegance-marron-claro-alzado.jpg'"
+            encoding: ascii
+            clean_accents: true
+            sanitize_replacement: "-"
+          - label: img-posterior
+            name: Imagen Posterior
+            widget: image
+            hint: "Nombre de archivo con mismo formato que Imagen Principal, pero añadiendo '-posterior' al final · Ejemplo: 'modelo-420-elegance-marron-claro-posterior.jpg'"
+            encoding: ascii
+            clean_accents: true
+            sanitize_replacement: "-"
+      - label: Publicar
+        name: published
+        widget: boolean
+        default: true
+  # - name: decoraciones
+  #   identifier_field: "{{fields.slug}}"
+  #   label: Decoraciones
+  #   folder: _data
+  #   create: false
+  #   slug: "{{fields.date}}-{{fields.slug}}"
+  #   preview_path: "{{fields.slug}}"
+  #   summary: "{{date}} · {{title}}"
+  #   sortable_fields: ['date', 'last_modified_at', 'commit_date', 'title']
+  #   view_filters:
+  #     - label: Publicados
+  #       field: published
+  #       pattern: true
+  #     - label: No Publicados
+  #       field: published
+  #       pattern: false
+  #   view_groups:
+  #     - label: Año
+  #       field: date
+  #       pattern: \d{4}
+  #     - label: Mes
+  #       field: date
+  #       pattern: \d{4}-\d{2}
+  #     - label: Publicados
+  #       field: published
+  #   fields: # The fields for each document, usually in front matter
+  #     - label: Título
+  #       name: title
+  #       widget: string
+  #       hint: "Ejemplo: 'Día de paseo por el nuevo barrio'"
+  #     - label: Título SEO
+  #       name: title_seo
+  #       widget: string
+  #       hint: "40 < Caracteres < 65 (~60) · 🥇 【】 ® © ▷ ᐅ ◁ ✆ ⊛ « » ‹ ›"
+  #       required: false
+  #     - label: Slug
+  #       name: slug
+  #       widget: string
+  #       hint: "Corto · Descriptivo · Sin palabras irrelevantes (de, por, para, el...) · En minúsculas · Sin espacios (SI guiones medios) · Sin caracteres extraños (ni eñes ni barras bajas) · Ejemplo: 'paseo-nuevo-barrio'."
+  #       encoding: ascii
+  #       clean_accents: true
+  #       sanitize_replacement: "-"
+  #     - label: Descripción
+  #       name: description
+  #       widget: text
+  #       hint: "70 < Caracteres < 155 (~135) · llll➤ ✅ ➕ ⚡ ✆ ® © ❤ ⬤ ✚ ➥ ✓ « » ‹ ›"
+  #     - label: Categorías
+  #       name: categories
+  #       widget: list
+  #       hint: Indica una o varias categorías separadas por coma y espacio
+  #       min: 1
+  #     - label: Imagen principal
+  #       name: image
+  #       widget: image
+  #       hint: "Nombre de archivo con mismo formato que 'slug' · Máximo 700 pixeles de ancho · Editor online: pixlr.com · Compresor online: kraken.io"
+  #       encoding: ascii
+  #       clean_accents: true
+  #       sanitize_replacement: "-"
+  #       required: false
+  #     - label: Índice
+  #       name: toc
+  #       widget: boolean
+  #       hint: Creado automáticamente mediante subencabezados
+  #       default: false
+  #     - label: Publicar
+  #       name: published
+  #       widget: boolean
+  #       default: false
+  #     - label: Fecha
+  #       name: date
+  #       widget: datetime
+  #       format: YYYY-MM-DD
+  #       date_format: YYYY-MM-DD
+  #       time_format: false
+  #     - label: Última modifiación
+  #       name: last_modified_at
+  #       widget: datetime
+  #       format: YYYY-MM-DD
+  #       date_format: YYYY-MM-DD
+  #       time_format: false
+  #       default: false
+  #       required: false
+  #     - label: Contenido
+  #       name: body
+  #       widget: markdown
+  #       required: false
+  # - name: modelos
+  #   identifier_field: "{{fields.slug}}"
+  #   label: Modelos
+  #   folder: _modelos
+  #   create: false
+  #   slug: "{{fields.date}}-{{fields.slug}}"
+  #   preview_path: "{{fields.slug}}"
+  #   summary: "{{date}} · {{title}}"
+  #   sortable_fields: ['date', 'last_modified_at', 'commit_date', 'title']
+  #   view_filters:
+  #     - label: Publicados
+  #       field: published
+  #       pattern: true
+  #     - label: No Publicados
+  #       field: published
+  #       pattern: false
+  #   view_groups:
+  #     - label: Año
+  #       field: date
+  #       pattern: \d{4}
+  #     - label: Mes
+  #       field: date
+  #       pattern: \d{4}-\d{2}
+  #     - label: Publicados
+  #       field: published
+  #   fields: # The fields for each document, usually in front matter
+  #     - label: Título
+  #       name: title
+  #       widget: string
+  #       hint: "Ejemplo: 'Día de paseo por el nuevo barrio'"
+  #     - label: Título SEO
+  #       name: title_seo
+  #       widget: string
+  #       hint: "40 < Caracteres < 65 (~60) · 🥇 【】 ® © ▷ ᐅ ◁ ✆ ⊛ « » ‹ ›"
+  #       required: false
+  #     - label: Slug
+  #       name: slug
+  #       widget: string
+  #       hint: "Corto · Descriptivo · Sin palabras irrelevantes (de, por, para, el...) · En minúsculas · Sin espacios (SI guiones medios) · Sin caracteres extraños (ni eñes ni barras bajas) · Ejemplo: 'paseo-nuevo-barrio'."
+  #       encoding: ascii
+  #       clean_accents: true
+  #       sanitize_replacement: "-"
+  #     - label: Descripción
+  #       name: description
+  #       widget: text
+  #       hint: "70 < Caracteres < 155 (~135) · llll➤ ✅ ➕ ⚡ ✆ ® © ❤ ⬤ ✚ ➥ ✓ « » ‹ ›"
+  #     - label: Categorías
+  #       name: categories
+  #       widget: list
+  #       hint: Indica una o varias categorías separadas por coma y espacio
+  #       min: 1
+  #     - label: Imagen principal
+  #       name: image
+  #       widget: image
+  #       hint: "Nombre de archivo con mismo formato que 'slug' · Máximo 700 pixeles de ancho · Editor online: pixlr.com · Compresor online: kraken.io"
+  #       encoding: ascii
+  #       clean_accents: true
+  #       sanitize_replacement: "-"
+  #       required: false
+  #     - label: Índice
+  #       name: toc
+  #       widget: boolean
+  #       hint: Creado automáticamente mediante subencabezados
+  #       default: false
+  #     - label: Publicar
+  #       name: published
+  #       widget: boolean
+  #       default: false
+  #     - label: Fecha
+  #       name: date
+  #       widget: datetime
+  #       format: YYYY-MM-DD
+  #       date_format: YYYY-MM-DD
+  #       time_format: false
+  #     - label: Última modifiación
+  #       name: last_modified_at
+  #       widget: datetime
+  #       format: YYYY-MM-DD
+  #       date_format: YYYY-MM-DD
+  #       time_format: false
+  #       default: false
+  #       required: false
+  #     - label: Contenido
+  #       name: body
+  #       widget: markdown
+  #       required: false

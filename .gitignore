@@ -1,2 +1,6 @@
 .DS_Store
 node_modules/
+Gemfile.lock
+package-lock.json
+_site
+.jekyll-cache

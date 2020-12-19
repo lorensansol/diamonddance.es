@@ -24,99 +24,30 @@ import { init as server, stream, reload } from 'browser-sync'
 
 // Variables
 export const devMode = false
-const productos = [
-  'modelo-420-decoracion-elegance-marron-claro',
-  'modelo-420-sin-decorar-cobre',
-  'modelo-420-sin-decorar-negro',
-  'modelo-520-decoracion-estelar-negro',
-  'modelo-520-sin-decorar-marron-claro',
-  'modelo-520-sin-decorar-negro',
-  'modelo-620-decoracion-mandala-negro',
-  'modelo-620-decoracion-panamera-cobre',
-  'modelo-620-pala-decorada-cobre',
-  'modelo-620-pala-decorada-negro',
-  'modelo-620-sin-decorar-cobre',
-  'modelo-620-sin-decorar-negro',
-  'modelo-720-pala-decorada-negro',
-  'modelo-720-sin-decorar-negro',
-  'modelo-720-sin-decorar-plata',
-  'modelo-820-decoracion-deluxe-azul',
-  'modelo-820-decoracion-deluxe-rojo',
-  'modelo-820-decoracion-deluxe-rosa-palo',
-  'modelo-820-pala-decorada-cobre',
-  'modelo-820-sin-decorar-azul',
-  'modelo-820-sin-decorar-cobre',
-  'modelo-820-sin-decorar-negro',
-  'modelo-820-sin-decorar-rojo',
-  'modelo-820-sin-decorar-rosa-palo',
-  'modelo-jazz-marron-claro'
-]
 
-// Crea una copia del archivo y lo renombra por cada producto
-gulp.task('prod', () => {
-  return productos.forEach(producto => {
-    gulp
-      .src('src/views/template/producto.pug')
-      .pipe(rename(producto + '.pug'))
-      .pipe(gulp.dest('src/views/pages/zapatos'))
-  })
-})
-
-// Convierte de PUG a HTML teniendo en cuenta la variable relativePath (filename)
 gulp.task('html', () => {
   return gulp
-    .src('src/views/pages/**/*.pug')
+    .src('./_pug/pages/**/*.pug')
     .pipe(
       data(file => {
         return {
-          fileName: file.history[0].replace(/.*\/(.*?)\.pug/gi, '$1'),
           devMode: devMode,
           require: require
         }
       })
     )
     .pipe(pug({ pretty: devMode }))
-    .pipe(gulp.dest('docs'))
-})
-
-gulp.task('pug', () => {
-  return gulp.series('prod', 'pug')
-})
-
-gulp.task('css', () => {
-  if (devMode) {
-    return gulp
-      .src('src/scss/styles.scss')
-      .pipe(sass())
-      .pipe(gulp.dest('docs/css'))
-      .pipe(stream())
-  } else {
-    return gulp
-      .src('src/scss/styles.scss')
-      .pipe(sass())
-      .pipe(
-        purgecss({
-          content: ['docs/**/*.html', 'docs/js/*.js'],
-          variables: true
-        })
-      )
-      .pipe(postcss([comments({ removeAll: true }), cssnano(), autoprefixer()]))
-      .pipe(gulp.dest('docs/css'))
-      .pipe(stream())
-  }
+    .pipe(gulp.dest('./'))
 })
 
 const filesJs = [
-  // 'src/js/lib/jquery.js',
-  // 'node_modules/bootstrap/docs/js/bootstrap.min.js',
-  // 'src/js/lib/lightbox.min.js',
   'node_modules/bootstrap.native/dist/bootstrap-native.js',
   'node_modules/simplelightbox/dist/simple-lightbox.js',
-  'src/js/scroll-behavior-smooth.js',
-  'src/js/scroll-shot.js',
-  'src/js/scroll-show.js',
-  'src/js/lazy-load.js',
-  'src/js/custom.js'
+  './_assets/js/scroll-behavior-smooth.js',
+  './_assets/js/scroll-shot.js',
+  './_assets/js/scroll-show.js',
+  './_assets/js/lazy-load.js',
+  './_assets/js/custom.js'
 ]
 
 gulp.task('js', () => {
@@ -124,22 +55,45 @@ gulp.task('js', () => {
     return gulp
       .src(filesJs)
       .pipe(concat('scripts.js'))
-      .pipe(gulp.src('src/js/smooth-scroll.min.js'))
-      .pipe(gulp.dest('docs/js'))
+      .pipe(gulp.src('./_assets/js/smooth-scroll.min.js'))
+      .pipe(gulp.dest('./js'))
   } else {
     return gulp
       .src(filesJs)
       .pipe(babel())
       .pipe(concat('scripts.js'))
-      .pipe(gulp.src('src/js/smooth-scroll.min.js'))
+      .pipe(gulp.src('./_assets/js/smooth-scroll.min.js'))
       .pipe(terser())
-      .pipe(gulp.dest('docs/js'))
+      .pipe(gulp.dest('./js'))
+  }
+})
+
+gulp.task('css', () => {
+  if (devMode) {
+    return gulp
+      .src('./_assets/scss/styles.scss')
+      .pipe(sass())
+      .pipe(gulp.dest('./css'))
+      .pipe(stream())
+  } else {
+    return gulp
+      .src('./_assets/scss/styles.scss')
+      .pipe(sass())
+      .pipe(
+        purgecss({
+          content: ['./_site/*.html', './js/*.js'],
+          variables: true
+        })
+      )
+      .pipe(postcss([comments({ removeAll: true }), cssnano(), autoprefixer()]))
+      .pipe(gulp.dest('./css'))
+      .pipe(stream())
   }
 })
 
 gulp.task('img', () => {
   return gulp
-    .src('src/img/**/*')
+    .src('./_assets/img/**/*')
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
@@ -150,32 +104,28 @@ gulp.task('img', () => {
         })
       ])
     )
-    .pipe(gulp.dest('docs/img'))
+    .pipe(gulp.dest('./img'))
 })
 
 gulp.task('gfonts', () => {
   return gulp
     .src('fonts.list')
     .pipe(googleWebFonts({ fontDisplayType: 'swap' }))
-    .pipe(gulp.dest('docs/gfonts'))
+    .pipe(gulp.dest('_assets/gfonts'))
 })
 
-gulp.task('rest', () => {
-  return gulp.src(['src/*.*', 'src/.*']).pipe(gulp.dest('docs'))
-})
-
-gulp.task('all', gulp.series('html', 'css', 'js', 'img', 'rest'))
+gulp.task('all', gulp.series('html', 'js', 'css'))
 
 gulp.task('default', () => {
   server({
     server: {
-      baseDir: './docs',
+      baseDir: './',
       serveStaticOptions: {
         extensions: ['html']
       }
     }
   })
-  gulp.watch('src/views/**/*.pug', gulp.series('html', reload))
-  gulp.watch('src/js/**/*.js', gulp.series('js', reload))
-  gulp.watch('src/scss/**/*.scss', gulp.series('css'))
+  gulp.watch('./_pug/**/*.pug', gulp.series('html', reload))
+  gulp.watch('./_assets/js/**/*.js', gulp.series('js', reload))
+  gulp.watch('./_assets/scss/**/*.scss', gulp.series('css'))
 })

@@ -1,0 +1,70 @@
+{% for modelo in site.data.modelos %}
+  {% for combinacion in modelo.combinaciones %}
+
+    <!-- Variable ID -->
+    {% capture id %}{% include id.html
+      nombre=modelo.nombre
+      decoracion=combinacion.decoracion
+      color=combinacion.color
+    %}{% endcapture %}
+
+    <a class="product-link col-6 col-sm-4 col-md-3 mb-1" href="#{{ id }}" data-toggle="modal" data-showup>
+      <img class="img-fluid" data-src="{{ combinacion.img-lateral }}" alt="{{ id }}" width="1024" height="1024">
+      <p class="h5 font-weight-light text-muted">Modelo {{ modelo.nombre }}<br>{{ combinacion.decoracion }} {{ combinacion.color }}</p>
+      <p>{{ combinacion.precio }} €</p>
+    </a>
+
+    <div class="modal fade" id="{{ id }}" role="dialog" aria-labelledby="{{ id }}" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content text-left">
+          <div class="modal-header">
+            <h3 class="modal-title h3 font-weight-light"><span class="d-none">Zapatos </span><span>Modelo {{ modelo.nombre }} {{ combinacion.decoracion }} {{ combinacion.color }}</span></h3>
+            <button class="close pt-4" type="button" data-dismiss="modal" aria-label="Cerrar"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid p-0">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row group-lightbox">
+                    <div class="col-12"><a class="d-block mb-1" href="{{ combinacion.img }}" data-lightbox="gallery-{{ id }}"><img class="img-fluid" data-src="{{ combinacion.img }}" alt="{{ id }}" width="1024" height="1024"/></a></div>
+                    <div class="col-4"><a class="d-block" href="{{ combinacion.img-lateral }}" data-lightbox="gallery-{{ id }}"><img class="img-fluid" data-src="{{ combinacion.img-lateral }}" alt="{{ id }}-lateral" width="1024" height="1024"/></a></div>
+                    <div class="col-4"><a class="d-block" href="{{ combinacion.img-alzado }}" data-lightbox="gallery-{{ id }}"><img class="img-fluid" data-src="{{ combinacion.img-alzado }}" alt="{{ id }}-alzado" width="1024" height="1024"/></a></div>
+                    <div class="col-4"><a class="d-block" href="{{ combinacion.img-posterior }}" data-lightbox="gallery-{{ id }}"><img class="img-fluid" data-src="{{ combinacion.img-posterior }}" alt="{{ id }}-posterior" width="1024" height="1024"/></a></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="project-info mt-3">
+                    <h2>Descripción</h2>
+                    <p>{{ modelo.descripcion }}</p>
+                    <h2>Diseño</h2>
+                    <p>{{ modelo.diseno }}</p>
+                    <h2>Materiales</h2>
+                    <p>{{ modelo.materiales }}</p>
+                    <h2>Tacón</h2>
+                    <p>{{ modelo.tacon }}</p>
+                    <h2>Color</h2>
+                    <p>{{ modelo.colores }}</p>
+                    {% if combinacion.decoracion != 'Sin Decorar' %}
+                      <h2>Decoración</h2>
+                      {{ site.data.decoraciones[combinacion.decoracion] }}
+                    {% endif %}
+                    <h2>Precio</h2>
+                    <p class="h2">{{ combinacion.precio }} €</p>
+                    <p>Comprobar <a href="#tallas" data-toggle="modal">tallas</a> antes de realizar pedido</p>
+                  </div>
+                  <div class="live-preview"><a class="btn btn-common uppercase" href="#contacto" data-dismiss="modal">✔ ¡Me los pido!</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-between">
+            <button class="btn btn-common btn-prev" type="button"><span class="font-weight-bold">‹</span><span class="d-none d-sm-inline"> Anterior</span></button>
+            <button class="btn btn-common" type="button" data-dismiss="modal">✖ Cerrar</button>
+            <button class="btn btn-common btn-next" type="button"><span class="d-none d-sm-inline">Siguiente </span><span class="font-weight-bold">›</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {% endfor %}
+{% endfor %}

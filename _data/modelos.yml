@@ -1,0 +1,217 @@
+- nombre: '420'
+  descripcion: 'Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...'
+  diseno: 'Pala de 4 tiras cruzadas especialmente colocadas para un total agarre del pie. Talón troquelado en ambos lados. Correa cruzada en el empeine y hebilla de cristales de fácil agarre para no tener que desabrocharla. Planta de gel para un mayor confort y super flexible.'
+  materiales: 'Zapato forrado en raso y suela de serraje.'
+  tacon: '7,5cm  *otras medidas bajo pedido'
+  colores: 'Disponible en cobre, negro y marrón claro. *todos los demás colores bajo pedido.'
+  combinaciones:
+    - decoracion: Elegance
+      color: Marrón Claro
+      precio: 99
+      img: /img/zapatos/modelo-420-decoracion-elegance-marron-claro.jpg
+      img-lateral: /img/zapatos/modelo-420-decoracion-elegance-marron-claro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-420-decoracion-elegance-marron-claro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-420-decoracion-elegance-marron-claro-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Cobre
+      precio: 75
+      img: /img/zapatos/modelo-420-sin-decorar-cobre.jpg
+      img-lateral: /img/zapatos/modelo-420-sin-decorar-cobre-lateral.jpg
+      img-alzado: /img/zapatos/modelo-420-sin-decorar-cobre-alzado.jpg
+      img-posterior: /img/zapatos/modelo-420-sin-decorar-cobre-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Negro
+      precio: 75
+      img: /img/zapatos/modelo-420-sin-decorar-negro.jpg
+      img-lateral: /img/zapatos/modelo-420-sin-decorar-negro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-420-sin-decorar-negro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-420-sin-decorar-negro-posterior.jpg
+- nombre: '520'
+  descripcion: 'Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...'
+  diseno: 'Básico de 5 tiras cruzadas perfectas para un total agarre del pie. Correa cruzada en el empeine y hebilla de cristales de fácil agarre para no tener que desabrocharla. Planta de gel para un mayor confort y super flexible.'
+  materiales: 'Zapato forrado en raso y suela de serraje.'
+  tacon: '7,5cm  *otras medidas bajo pedido'
+  colores: 'Disponible en cobre, negro y marrón claro. *todos los demás colores bajo pedido.'
+  combinaciones:
+    - decoracion: Estelar
+      color: Negro
+      precio: 92
+      img: /img/zapatos/modelo-520-decoracion-estelar-negro.jpg
+      img-lateral: /img/zapatos/modelo-520-decoracion-estelar-negro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-520-decoracion-estelar-negro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-520-decoracion-estelar-negro-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Marrón Claro
+      precio: 69
+      img: /img/zapatos/modelo-520-sin-decorar-marron-claro.jpg
+      img-lateral: /img/zapatos/modelo-520-sin-decorar-marron-claro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-520-sin-decorar-marron-claro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-520-sin-decorar-marron-claro-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Negro
+      precio: 69
+      img: /img/zapatos/modelo-520-sin-decorar-negro.jpg
+      img-lateral: /img/zapatos/modelo-520-sin-decorar-negro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-520-sin-decorar-negro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-520-sin-decorar-negro-posterior.jpg
+- nombre: '620'
+  descripcion: 'Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...'
+  diseno: 'Precioso modelo de 4 tiras curvadas cosidas en la parte central superior. Diseño muy cómodo ya que se adapta muy bien al pie. Correa cruzada en el empeine y hebilla de cristales de fácil agarre para no tener que desabrocharla. Planta de gel para un mayor confort y super flexible.'
+  materiales: 'Zapato forrado en raso y suela de serraje.'
+  tacon: '7,5cm  *otras medidas bajo pedido'
+  colores: 'Disponible en cobre, negro y marrón claro. *todos los demás colores bajo pedido.'
+  combinaciones:
+    - decoracion: Mandala
+      color: Negro
+      precio: 112
+      img: /img/zapatos/modelo-620-decoracion-mandala-negro.jpg
+      img-lateral: /img/zapatos/modelo-620-decoracion-mandala-negro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-620-decoracion-mandala-negro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-620-decoracion-mandala-negro-posterior.jpg
+    - decoracion: Panamera
+      color: Cobre
+      precio: 112
+      img: /img/zapatos/modelo-620-decoracion-panamera-cobre.jpg
+      img-lateral: /img/zapatos/modelo-620-decoracion-panamera-cobre-lateral.jpg
+      img-alzado: /img/zapatos/modelo-620-decoracion-panamera-cobre-alzado.jpg
+      img-posterior: /img/zapatos/modelo-620-decoracion-panamera-cobre-posterior.jpg
+    - decoracion: Pala
+      color: Cobre
+      precio: 99
+      img: /img/zapatos/modelo-620-pala-decorada-cobre.jpg
+      img-lateral: /img/zapatos/modelo-620-pala-decorada-cobre-lateral.jpg
+      img-alzado: /img/zapatos/modelo-620-pala-decorada-cobre-alzado.jpg
+      img-posterior: /img/zapatos/modelo-620-pala-decorada-cobre-posterior.jpg
+    - decoracion: Pala
+      color: Negro
+      precio: 99
+      img: /img/zapatos/modelo-620-pala-decorada-negro.jpg
+      img-lateral: /img/zapatos/modelo-620-pala-decorada-negro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-620-pala-decorada-negro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-620-pala-decorada-negro-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Cobre
+      precio: 82
+      img: /img/zapatos/modelo-620-sin-decorar-cobre.jpg
+      img-lateral: /img/zapatos/modelo-620-sin-decorar-cobre-lateral.jpg
+      img-alzado: /img/zapatos/modelo-620-sin-decorar-cobre-alzado.jpg
+      img-posterior: /img/zapatos/modelo-620-sin-decorar-cobre-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Negro
+      precio: 82
+      img: /img/zapatos/modelo-620-sin-decorar-negro.jpg
+      img-lateral: /img/zapatos/modelo-620-sin-decorar-negro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-620-sin-decorar-negro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-620-sin-decorar-negro-posterior.jpg
+- nombre: '720'
+  descripcion: 'Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...'
+  diseno: 'Pala cerrada muy cómoda al llevar tul entre las tiras. Elegante y confortable diseño de Goldance.'
+  materiales: 'Zapato forrado en raso y suela de serraje.'
+  tacon: '7,5cm  *otras medidas bajo pedido'
+  colores: 'Disponible en negro y plata. * todos los demás colores bajo pedido.'
+  combinaciones:
+    - decoracion: Pala
+      color: Negro
+      precio: 99
+      img: /img/zapatos/modelo-720-pala-decorada-negro.jpg
+      img-lateral: /img/zapatos/modelo-720-pala-decorada-negro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-720-pala-decorada-negro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-720-pala-decorada-negro-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Negro
+      precio: 79
+      img: /img/zapatos/modelo-720-sin-decorar-negro.jpg
+      img-lateral: /img/zapatos/modelo-720-sin-decorar-negro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-720-sin-decorar-negro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-720-sin-decorar-negro-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Plata
+      precio: 79
+      img: /img/zapatos/modelo-720-sin-decorar-plata.jpg
+      img-lateral: /img/zapatos/modelo-720-sin-decorar-plata-lateral.jpg
+      img-alzado: /img/zapatos/modelo-720-sin-decorar-plata-alzado.jpg
+      img-posterior: /img/zapatos/modelo-720-sin-decorar-plata-posterior.jpg
+- nombre: '820'
+  descripcion: 'Zapato de baile de mujer. Especial para bailes de salón y bailes latinos, salsa, bachata...'
+  diseno: 'Bonito modelo con 4 tiras que se juntan en el medio para formar una trenza sobre la parte superior del pie. Sujección al tobillo con hebilla de cristales de fácil agarre para no tener que desabrocharla. Planta de gel para un mayor confort y super flexible.'
+  materiales: 'Zapato forrado en raso y suela de serraje.'
+  tacon: '7,5cm  *otras medidas bajo pedido'
+  colores: 'Disponible en rojo, rosa palo, azul, negro, cobre y marrón claro.'
+  combinaciones:
+    - decoracion: Deluxe
+      color: Azul
+      precio: 112
+      img: /img/zapatos/modelo-820-decoracion-deluxe-azul.jpg
+      img-lateral: /img/zapatos/modelo-820-decoracion-deluxe-azul-lateral.jpg
+      img-alzado: /img/zapatos/modelo-820-decoracion-deluxe-azul-alzado.jpg
+      img-posterior: /img/zapatos/modelo-820-decoracion-deluxe-azul-posterior.jpg
+    - decoracion: Deluxe
+      color: Rojo
+      precio: 112
+      img: /img/zapatos/modelo-820-decoracion-deluxe-rojo.jpg
+      img-lateral: /img/zapatos/modelo-820-decoracion-deluxe-rojo-lateral.jpg
+      img-alzado: /img/zapatos/modelo-820-decoracion-deluxe-rojo-alzado.jpg
+      img-posterior: /img/zapatos/modelo-820-decoracion-deluxe-rojo-posterior.jpg
+    - decoracion: Deluxe
+      color: Rosa Palo
+      precio: 125
+      img: /img/zapatos/modelo-820-decoracion-deluxe-rosa-palo.jpg
+      img-lateral: /img/zapatos/modelo-820-decoracion-deluxe-rosa-palo-lateral.jpg
+      img-alzado: /img/zapatos/modelo-820-decoracion-deluxe-rosa-palo-alzado.jpg
+      img-posterior: /img/zapatos/modelo-820-decoracion-deluxe-rosa-palo-posterior.jpg
+    - decoracion: Pala
+      color: Cobre
+      precio: 99
+      img: /img/zapatos/modelo-820-pala-decorada-cobre.jpg
+      img-lateral: /img/zapatos/modelo-820-pala-decorada-cobre-lateral.jpg
+      img-alzado: /img/zapatos/modelo-820-pala-decorada-cobre-alzado.jpg
+      img-posterior: /img/zapatos/modelo-820-pala-decorada-cobre-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Azul
+      precio: 82
+      img: /img/zapatos/modelo-820-sin-decorar-azul.jpg
+      img-lateral: /img/zapatos/modelo-820-sin-decorar-azul-lateral.jpg
+      img-alzado: /img/zapatos/modelo-820-sin-decorar-azul-alzado.jpg
+      img-posterior: /img/zapatos/modelo-820-sin-decorar-azul-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Cobre
+      precio: 82
+      img: /img/zapatos/modelo-820-sin-decorar-cobre.jpg
+      img-lateral: /img/zapatos/modelo-820-sin-decorar-cobre-lateral.jpg
+      img-alzado: /img/zapatos/modelo-820-sin-decorar-cobre-alzado.jpg
+      img-posterior: /img/zapatos/modelo-820-sin-decorar-cobre-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Negro
+      precio: 82
+      img: /img/zapatos/modelo-820-sin-decorar-negro.jpg
+      img-lateral: /img/zapatos/modelo-820-sin-decorar-negro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-820-sin-decorar-negro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-820-sin-decorar-negro-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Rojo
+      precio: 82
+      img: /img/zapatos/modelo-820-sin-decorar-rojo.jpg
+      img-lateral: /img/zapatos/modelo-820-sin-decorar-rojo-lateral.jpg
+      img-alzado: /img/zapatos/modelo-820-sin-decorar-rojo-alzado.jpg
+      img-posterior: /img/zapatos/modelo-820-sin-decorar-rojo-posterior.jpg
+    - decoracion: Sin Decorar
+      color: Rosa Palo
+      precio: 89
+      img: /img/zapatos/modelo-820-sin-decorar-rosa-palo.jpg
+      img-lateral: /img/zapatos/modelo-820-sin-decorar-rosa-palo-lateral.jpg
+      img-alzado: /img/zapatos/modelo-820-sin-decorar-rosa-palo-alzado.jpg
+      img-posterior: /img/zapatos/modelo-820-sin-decorar-rosa-palo-posterior.jpg
+- nombre: 'Jazz'
+  descripcion: 'Zapatillas de Jazz unisex con suela partida de serraje especial para bailes de salón y latinos.'
+  diseno: 'Zapatillas de Jazz.'
+  materiales: 'Zapatilla forrada en tela con suela partida de serraje.'
+  tacon: 'Sin Tacón'
+  colores: 'Disponible en marrón claro y negro.'
+  combinaciones:
+    - decoracion: Sin Decorar
+      color: Marrón Claro
+      precio: 35
+      img: /img/zapatos/modelo-jazz-marron-claro.jpg
+      img-lateral: /img/zapatos/modelo-jazz-marron-claro-lateral.jpg
+      img-alzado: /img/zapatos/modelo-jazz-marron-claro-alzado.jpg
+      img-posterior: /img/zapatos/modelo-jazz-marron-claro-posterior.jpg
