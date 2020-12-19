@@ -26,11 +26,6 @@ collections:
       - label: Nombre de Modelo
         name: nombre
         widget: string
-        slug:
-          widget: string
-          encoding: ascii
-          clean_accents: true
-          sanitize_replacement: '-'
       - label: Descripción
         name: descripcion
         widget: text
@@ -75,34 +70,18 @@ collections:
             name: img
             widget: image
             hint: 'Nombre de archivo en minúsculas, sin acentos ni eñes, cambiando espacios por guioens medios · Resolución recomendada: 1024 x 1024 pixeles · Editor online: pixlr.com · Compresor online: kraken.io · Ejemplo: "modelo-420-elegance-marron-claro.jpg"'
-            slug:
-              encoding: ascii
-              clean_accents: true
-              sanitize_replacement: '-'
           - label: Imagen Lateral
             name: img-lateral
             widget: image
             hint: 'Nombre de archivo igual que Imagen Principal, pero añadiendo "-lateral" al final · Ejemplo: "modelo-420-elegance-marron-claro-lateral.jpg"'
-            slug:
-              encoding: ascii
-              clean_accents: true
-              sanitize_replacement: '-'
           - label: Imagen Alzado
             name: img-alzado
             widget: image
             hint: 'Nombre de archivo igual que Imagen Principal, pero añadiendo "-alzado" al final · Ejemplo: "modelo-420-elegance-marron-claro-alzado.jpg"'
-            slug:
-              encoding: ascii
-              clean_accents: true
-              sanitize_replacement: '-'
           - label: Imagen Posterior
             name: img-posterior
             widget: image
             hint: 'Nombre de archivo igual que Imagen Principal, pero añadiendo "-posterior" al final · Ejemplo: "modelo-420-elegance-marron-claro-posterior.jpg"'
-            slug:
-              encoding: ascii
-              clean_accents: true
-              sanitize_replacement: '-'
           - label: Publicar
             name: published
             widget: boolean
