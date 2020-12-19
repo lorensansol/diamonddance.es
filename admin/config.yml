@@ -56,17 +56,18 @@ collections:
             widget: relation
             hint: 'Indica una decoración que previamente hayas creado en "Decoraciones"'
             collection: decoraciones
-            file: _data/decoraciones.yml
-            value_field: '*'
-            search_fields: ['*']
+            # folder: _decoraciones
+            value_field: 'nombre.*'
+            search_fields: ['nombre.*']
+            summary: 
           - label: Color
             name: color
             widget: relation
             hint: 'Indica un color que previamente hayas creado en "Colores"'
             collection: colores
-            file: _data/colores.yml
-            value_field: '*'
-            search_fields: ['*']
+            file: _data/colores
+            value_field: 'nombre.*'
+            search_fields: ['nombre.*']
           - label: Precio
             name: precio
             widget: number
@@ -133,22 +134,6 @@ collections:
   - label: Datos
     name: datos
     files:
-    - label: Decoraciones
-      name: decoraciones
-      file: _data/decoraciones.yml
-      fields:
-        - label: Decoración
-          name: decoracion
-          widget: list
-          # summary: Decoraciónnnnn
-          # allow_add: true
-          fields:
-            - label: Nombre de Decoración
-              name: nombre
-              widget: string
-            - label: Descripción
-              name: descripcion
-              widget: markdown
     - label: Colores
       name: colores
       file: _data/colores.yml
