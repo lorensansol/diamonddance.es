@@ -23,7 +23,7 @@ import googleWebFonts from 'gulp-google-webfonts'
 import { init as server, stream, reload } from 'browser-sync'
 
 // Variables
-export const devMode = true
+export const devMode = false
 
 gulp.task('html', () => {
   return gulp
