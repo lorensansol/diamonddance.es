@@ -1,7 +1,7 @@
 // Common
 import gulp from 'gulp'
 import data from 'gulp-data'
-import rename from 'gulp-rename'
+// import rename from 'gulp-rename'
 import concat from 'gulp-concat'
 // HTML
 import pug from 'gulp-pug'
