@@ -82,7 +82,14 @@ gulp.task('css', () => {
       .pipe(
         purgecss({
           content: ['./_site/*.html', './js/*.js'],
-          variables: true
+          variables: true,
+          // Correct bootstrap.native carousel
+          whitelist: [
+            'carousel-item-next',
+            'carousel-item-prev',
+            'carousel-item-left',
+            'carousel-item-right'
+          ]
         })
       )
       .pipe(postcss([comments({ removeAll: true }), cssnano(), autoprefixer()]))
